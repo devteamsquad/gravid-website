@@ -1,0 +1,33 @@
+  .foundation_members_section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('../assets/bg_trusted-identity.PNG');
+    overflow-x: hidden;
+  }
+  .fm_title {
+    display: flex;
+    justify-content: center;
+    margin: 241px 0px 0px;
+    font: 600 4rem "Urbanist", Helvetica, Arial, serif;
+    color: rgb(255, 255, 255);
+    text-align: center;
+  }
+  .fm_flex_row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0px 10px;
+    margin: 79px 0px 241px;
+    width: 60%;
+  }
+  .fm_image {
+    width: 20%;
+  }
+  .fm_image1 {
+    width: 10%;
+  }
+  .fm_image2 {
+    width: 20%;
+  }
+

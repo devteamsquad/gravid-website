@@ -1,0 +1,13 @@
+:root {
+    --Urbanist: "Urbanist", Helvetica, Arial, serif;
+    --Roboto: "Roboto", Helvetica, Arial, serif;
+  }
+  
+  .foundation-sect {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+  
+  

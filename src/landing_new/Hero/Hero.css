@@ -1,0 +1,48 @@
+:root {
+  --Urbanist: "Urbanist", Helvetica, Arial, serif;
+  --Roboto: "Roboto", Helvetica, Arial, serif;
+}
+
+.hero-section {
+  background-image: url("../../assets/home-hero-bg.png");
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.hero-head {
+  font: 700 100px /1.2 var(--Urbanist);
+  padding: 0;
+}
+.hero-subtext {
+  margin: 20px 0;
+  font: 500 36px / 1.5 var(--Roboto);
+  padding: 0;
+}
+.hero-btn {
+  padding: 17px 21px !important;
+}
+
+@media screen and (max-width: 768px) {
+  .hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .hero-head {
+    font-size: 64px;
+    text-align: center;
+  }
+  .hero-subtext {
+    font-size: 24px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .hero-head {
+    font-size: 36px;
+  }
+  .hero-subtext {
+    font-size: 15px;
+    font-weight: 400;
+  }
+}

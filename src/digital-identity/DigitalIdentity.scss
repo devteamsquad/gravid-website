@@ -1,0 +1,80 @@
+@use "../shared/css/utils.scss" as *; // media-query
+
+.common_container {
+
+    padding: 20px 200px;
+    // padding: 100px 200px 20px;
+    // margin: 20px 200px;
+    // z-index: 99;
+    // height: 80vh;
+    // position: absolute;
+    // bottom: 250px;
+    // overflow: auto;
+    // background-color: rgb(43, 42, 42);
+}
+
+.common_title {
+    display: flex;
+    justify-content: left;
+    font: 700 56px/1.2 "Urbanist", Helvetica, Arial, serif;
+    color: rgb(255, 255, 255);
+    // text-align: center;
+}
+
+.common_subtitle {
+    display: flex;
+    justify-content: left;
+    margin: 39px 0px 0px;
+    font: 500 36px/1.5 "Roboto", Helvetica, Arial, serif;
+    color: rgb(255, 255, 255);
+    // text-align: center;
+}
+
+.common_content {
+    display: flex;
+    justify-content: left;
+    margin: 39px 0px 0px;
+    font: 400 18px/1.5 "Roboto", Helvetica, Arial, serif;
+    color: rgba(228, 226, 226, 0.984);
+    // text-align: center;
+}
+
+.common_button {
+    display: flex;
+    justify-content: center;
+    margin: 56px 0px 0px;
+    width: 142px;
+    max-width: 100%;
+    font: 400 16px/1.5 "Roboto", Helvetica, Arial, serif;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    background-color: rgb(13, 13, 13);
+    border-radius: 4px 4px 4px 4px;
+    padding: 8px 8px 8px 8px;
+    outline: 1px solid rgb(255, 255, 255);
+    outline-offset: -1px;
+    cursor: pointer;
+}
+
+.common_button_close {
+    position: sticky;
+    // top: 0px;
+    // right: 50px;
+    font: 400 16px/1.5 "Roboto", Helvetica, Arial, serif;
+    color: rgb(255, 255, 255);
+    background-color: rgb(13, 13, 13);
+    border-radius: 4px 4px 4px 4px;
+    margin: 50px;
+    cursor: pointer;
+}
+  
+.button_close_container {
+position: relative;
+display: flex;
+justify-content: start;
+align-items: center;
+}
+
+.mt {
+    margin-top: 40px;
+}

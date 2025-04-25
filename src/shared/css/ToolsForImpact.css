@@ -1,0 +1,109 @@
+:root {
+  --Urbanist: "Urbanist", Helvetica, Arial, serif;
+  --Roboto: "Roboto", Helvetica, Arial, serif;
+}
+
+.tools-for-impact {
+  padding: 5% 0;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.text-cont {
+  width: 70%;
+}
+
+.text-cont h1 {
+  text-align: center;
+  color: white;
+  font: 600 56px/1.2 var(--Urbanist);
+}
+
+.description {
+  margin-bottom: 2rem;
+  text-align: center;
+  color: white;
+  font: 400 16px/1.6 var(--Roboto);
+}
+
+.button-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  gap: 1rem;
+  max-width: 500px;
+  margin-top: 20px;
+}
+.btn-icon {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+.btn-text {
+  font-size: 0.9rem;
+}
+
+.impact-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 9999px;
+  padding: 0.8rem 1rem;
+  color: white;
+  transition: all 0.3s ease;
+  flex-basis: calc(33.333% - 1rem);
+  max-width: fit-content;
+}
+
+@media (max-width: 768px) {
+  .text-cont h1 {
+    font-size: 2rem;
+  }
+
+  .description {
+    font-size: 0.9rem;
+  }
+  .text-cont {
+    width: 90%;
+  }
+
+  .btn-icon {
+    font-size: 1.2rem;
+  }
+  .btn-text {
+    font-size: 1rem;
+  }
+  .impact-button {
+    font-size: 0.8rem;
+    padding: 0.4rem 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .text-cont {
+    width: 98%;
+  }
+  .text-cont h1 {
+    font-size: 1.8rem;
+  }
+
+  .description {
+    font-size: 0.8rem;
+  }
+  .button-grid {
+    max-width: 320px;
+  }
+  .btn-icon {
+    font-size: 1.1rem;
+  }
+  .btn-text {
+    white-space: nowrap;
+    font-size: 0.8rem;
+  }
+}

@@ -1,0 +1,154 @@
+.busi-review-card-cont {
+  text-align: left;
+  padding: 20px;
+  border-radius: 24px;
+  border: 1px solid #7b79decc;
+  width: 300px;
+  background-color: #f9f9f9a6;
+  backdrop-filter: blur(3px);
+}
+.hero-img-cont {
+  height: 100%;
+  display: block;
+}
+.scrollable-div {
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.vid-placeholder-cont {
+  position: relative;
+  width: 320px;
+  height: 458px;
+
+  cursor: pointer;
+  z-index: 1;
+  overflow: hidden;
+}
+.vid-placeholder-cont-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 3px solid #7b79decc;
+  border-radius: 24px;
+}
+.play-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 45px;
+  height: 45px;
+}
+.company-detail-cont {
+  position: absolute;
+  bottom: 0;
+  border-bottom-left-radius: 24px;
+  border-bottom-right-radius: 24px;
+  width: 100%;
+  height: 75px;
+  background-color: #00000059;
+  z-index: 1;
+  backdrop-filter: blur(7px);
+  border: 1px solid #f9f9f959;
+  padding: 15px 20px;
+  display: flex;
+  gap: 10px;
+}
+.company-logo {
+  width: 42px;
+  height: 42px;
+}
+.company-logo img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.company-txt h3 {
+  font: 700 16px/1.5 var(--Urbanist);
+  padding: 0;
+}
+.company-txt p {
+  font: 400 14px/1.5 var(--Roboto);
+  padding: 0;
+}
+
+.review-insights-title {
+  font: 600 56px/1.2 var(--Urbanist);
+  text-align: center;
+}
+.busi-identity-cont {
+  gap: 10px;
+  align-items: center;
+}
+
+.busi-review-img-cont {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+}
+.busi-review-img-cont img {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.busi-review-name {
+  font: 700 16px/1.5 var(--Urbanist);
+  color: #454397;
+}
+.joined {
+  font: 300 12px/1.5 var(--Roboto);
+  color: #454397;
+}
+
+.review-comment {
+  font: 400 14px/1.5 var(--Roboto);
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .hero-img-cont {
+    overflow-x: scroll;
+    height: 100%;
+    width: 100%;
+    scrollbar-width: none;
+  }
+  .hero-img-cont::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollable-div {
+    flex-wrap: nowrap;
+    width: 110%;
+    overflow-x: scroll;
+    justify-content: start;
+    gap: 20px;
+  }
+
+  .review-insights-title {
+    font-size: 36px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .scrollable-div {
+    width: 250%;
+  }
+  .vid-placeholder-cont {
+    width: 336px;
+    height: 422px;
+  }
+}
+@media screen and (max-width: 350px) {
+  .vid-placeholder-cont {
+    width: 90vw;
+    height: 422px;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .company-txt {
+    color: #ffffff;
+  }
+}

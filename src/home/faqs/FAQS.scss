@@ -1,0 +1,77 @@
+@use "../../shared/css/utils.scss" as *; // media-query
+
+.faqs-section {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.faqs_flex_col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 112px auto 180px;
+  width: 80%;
+}
+.faqs_title {
+  display: flex;
+  justify-content: center;
+  font: 700 48px/1.2 "Roboto", Helvetica, Arial, serif;
+  // color: rgb(255, 255, 255);
+  text-align: center;
+
+  @include md {
+    font-size: 50px;
+  }
+  @include xxs {
+    font-size: 36px;
+  }
+}
+.faqs_subtitle {
+  display: flex;
+  justify-content: center;
+  margin: 24px 0px 0px;
+  font: 400 18px/1.5 "Roboto", Helvetica, Arial, serif;
+  // color: rgb(255, 255, 255);
+  text-align: center;
+  margin-bottom: 50px;
+}
+.faqs_flex_row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border-bottom: 1px solid white;
+}
+.faqs_subtitle1 {
+  font: 700 18px/1.5 "Roboto", Helvetica, Arial, serif;
+  color: rgb(255, 255, 255);
+}
+.faqs_icon {
+  // color: white;
+}
+.faqs_group {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 200px 0px 0px;
+  width: 80%;
+}
+.faqs_button {
+  margin: 32px;
+  padding: 10px;
+  font: 400 16px/1.5 "Roboto", Helvetica, Arial, serif;
+  // color: rgb(255, 255, 255);
+  width: 200px;
+  height: 44px;
+  border-radius: 22px;
+  border: 1px solid white;
+  cursor: pointer;
+  text-align: center;
+}
+@media (prefers-color-scheme: light) {
+  .faqs_button {
+    border-color: #060708;
+  }
+}

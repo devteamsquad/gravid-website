@@ -1,0 +1,96 @@
+@use "../../shared/css/utils.scss" as *; // media-query
+
+.ec_section {
+  display: flex;
+  flex-direction: column;
+}
+.ec_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  // gap: 0px 10px;
+  margin: 80px auto 80px;
+  width: 100%;
+  max-width: 1320px;
+  padding: 0px 80px 0px;
+  @include md {
+    flex-direction: column-reverse;
+    gap: 30px 10px;
+    margin: 80px auto 50px;
+    padding: 0px 72px 0px;
+  }
+  @include xs {
+    margin: 80px auto;
+    padding: 0px 16px 0px;
+  }
+  @include tn {
+    margin: 80px auto;
+    padding: 0px 16px 0px;
+  }
+}
+.ec_content {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  // width: 433px;
+  min-width: 0px;
+  @include md {
+    margin-top: unset;
+    margin-bottom: unset;
+    width: 100%;
+    min-width: unset;
+  }
+}
+.ec_title {
+  font: 600 48px/1.2 "Urbanist", Helvetica, Arial, serif;
+  // color: rgb(255, 255, 255);
+  padding: 0;
+  @include md {
+    align-items: flex-start;
+    font-size: 44px;
+  }
+  @include xxs {
+    font-size: 36px;
+  }
+}
+.ec_subtitle {
+  margin: 20px 0px 0px;
+  font: 300 16px/1.5 "Roboto", Helvetica, Arial, serif;
+  // color: rgb(255, 255, 255);
+  padding: 0;
+  @include tn {
+    margin: 20px 0px 0px;
+  }
+}
+.ec_button {
+  display: flex;
+  justify-content: center;
+  margin: 56px 0px 0px;
+  width: 142px;
+  max-width: 100%;
+  font: 400 16px/1.5 "Roboto", Helvetica, Arial, serif;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  background-color: rgb(13, 13, 13);
+  border-radius: 4px 4px 4px 4px;
+  padding: 8px 8px 8px 8px;
+  outline: 1px solid rgb(255, 255, 255);
+  outline-offset: -1px;
+  cursor: pointer;
+  @include md {
+    margin-top: 20px;
+  }
+}
+.ec_image {
+  width: 45%;
+  // width: 629px;
+  min-width: 0px;
+  object-fit: cover;
+  @include md {
+    margin-top: unset;
+    margin-bottom: unset;
+    width: 100%;
+    min-width: unset;
+    max-width: 629px;
+  }
+}

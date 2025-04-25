@@ -1,0 +1,85 @@
+
+  .ti_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150vh;
+    background-color: #1e1e1e1e;
+    background-image: url('../assets/bg_trusted-identity.PNG');
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+  }
+
+  .ti_container {
+    display: flex;
+    flex-direction: column;
+    margin: 0px auto;
+    width: 90%;
+    border-radius: 62px 62px 62px 62px;
+    outline: 2px solid rgb(255, 255, 255);
+    outline-offset: -2px;
+  }
+  .ti_flex_row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0px 10px;
+    margin: 42px auto;
+    width: 92%;
+  }
+  .ti_flex_col {
+    display: flex;
+    flex-direction: column;
+    gap: 40px 0px;
+    width: 501px;
+  }
+  .ti_title {
+    font: 700 48px/1.2 "Urbanist", Helvetica, Arial, serif;
+    color: rgb(255, 255, 255);
+    letter-spacing: -0.1px;
+  }
+  .ti_subtitle {
+    margin: 0px 36px 0px 0px;
+    font: 700 20px/1.39 "Roboto", Helvetica, Arial, serif;
+    color: rgb(255, 255, 255);
+  }
+  .ti_highlight {
+    width: 309px;
+    font: 300 16px/1.5 "Roboto", Helvetica, Arial, serif;
+    color: rgb(255, 255, 255);
+  }
+  .ti_button {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 155px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 8px 8px 8px 8px;
+    outline: 1px solid rgb(255, 255, 255);
+    outline-offset: -1px;
+    cursor: pointer;
+  }
+  .ti_highlight1 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 13px 0px 12px 20px;
+    width: 81px;
+    font: 400 16px/1.18 "Roboto", Helvetica, Arial, serif;
+    color: rgb(255, 255, 255);
+    text-align: center;
+  }
+  .ti_icon {
+    position: absolute;
+    top: 14px;
+    right: 24px;
+    width: 16px;
+    height: 16px;
+    color: white;
+  }
+  .ti_image {
+    width: 595px;
+  }
+

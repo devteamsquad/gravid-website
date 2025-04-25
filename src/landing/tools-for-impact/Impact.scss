@@ -1,0 +1,56 @@
+@use "../../shared/css/utils.scss" as *; // media-query
+
+.main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.impact_content {
+  position: relative;
+  display: flex;
+  margin: 0px 0px 50px;
+  justify-content: center;
+  font: 300 16px/1.5 "Roboto", Helvetica, Arial, serif;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+.button-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping of items */
+  justify-content: center; /* Distribute space between items */
+  max-width: 500px; /* Set a max width for the container */
+  margin: 0 auto; /* Center the container */
+}
+
+.impact-button {
+  color: white;
+  background-color: black; /* Changed to black background */
+  border: 1px solid white; /* White border outline */
+  border-radius: 1.25rem; /* Equivalent to rounded-lg */
+  font-weight: 500; /* Equivalent to font-medium */
+  font-size: 0.875rem; /* Equivalent to text-sm */
+  padding: 0.625rem 1.25rem; /* Equivalent to px-5 py-2.5 */
+  display: inline-flex;
+  align-items: center;
+  text-align: center;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  margin-right: 0.5rem; /* Equivalent to me-2 */
+  margin-bottom: 0.5rem; /* Equivalent to mb-2 */
+}
+
+.impact-button:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Optional: Slightly lighter on hover */
+}
+
+.impact-button:focus {
+  outline: none; /* Remove default outline */
+  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.5); /* Light white focus ring */
+}
+
+.impact-icon {
+  width: 1rem; /* Equivalent to w-4 */
+  height: 1rem; /* Equivalent to h-4 */
+  margin-right: 0.5rem; /* Equivalent to me-2 */
+}

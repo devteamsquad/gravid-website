@@ -1,0 +1,71 @@
+@use "../../shared/css/utils.scss" as *; // media-query
+
+.main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.membership_section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.membership_flexCol {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px auto 60px;
+  width: 919px;
+  max-width: 85%;
+  @include md {
+    margin: 20px auto 60px;
+  }
+  @include xs {
+    margin: 80px auto;
+  }
+  @include tn {
+    margin: 50px auto;
+  }
+}
+.membership_title {
+  position: relative;
+  font: 600 60px/1.2 "Urbanist", Helvetica, Arial, serif;
+  // color: rgb(255, 255, 255);
+  padding-bottom: 0;
+  @include md {
+    align-items: flex-start;
+    font-size: 50px;
+  }
+  @include xxs {
+    font-size: 36px;
+  }
+}
+.membership_content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0px 0px;
+  font: 300 16px/1.5 "Roboto", Helvetica, Arial, serif;
+  // color: rgb(255, 255, 255);
+  text-align: center;
+  @include tn {
+    margin: 0px 0px 0px;
+  }
+}
+.membership_button {
+  display: flex;
+  justify-content: center;
+  margin: 0px 0px 0px;
+  width: 142px;
+  max-width: 100%;
+  font: 400 16px/1.5 "Roboto", Helvetica, Arial, serif;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  background-color: rgb(13, 13, 13);
+  border-radius: 4px;
+  padding: 8px 8px 8px 8px;
+  outline: 1px solid rgb(255, 255, 255);
+  outline-offset: -1px;
+  cursor: pointer;
+}

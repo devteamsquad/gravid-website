@@ -1,0 +1,32 @@
+  .navbar_section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0px 10px;
+    margin: 18px auto 14px;
+    width: 91.32%;
+  }
+  .logo {
+    width: 132px;
+  }
+  .menu-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0px 10px;
+    width: 347px;
+  }
+
+  .menu-item {
+    font: 400 16px/1.5 "Roboto", Helvetica, Arial, serif;
+    color: rgb(255, 255, 255);
+  }
+
+  .menu-item .highlight {
+    text-decoration: underline;
+  }
+
+  .menu-item:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }

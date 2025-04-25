@@ -1,0 +1,98 @@
+@use "../../shared/css/utils.scss" as *; // media-query
+
+.ti_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px 0px;
+  overflow-x: hidden;
+
+  @include md {
+    margin: 50px 0px;
+  }
+}
+
+.ti_container {
+  display: flex;
+  flex-direction: column;
+  margin: 0px auto;
+  width: 90%;
+  border-radius: 62px 62px 62px 62px;
+  // outline: 2px solid rgb(255, 255, 255);
+  // outline-offset: -2px;
+  border-image-slice: 5 10 73 5;
+  border-image-width: 2px;
+  border-image-outset: 0px 0px 0px 0px;
+  border-image-repeat: stretch stretch;
+  border-image-source: url("https://hookagency.com/wp-content/uploads/2015/11/hazemaster-gray-gradient-ui-background.jpg");
+  border-style: solid;
+}
+.ti_flex_row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 42px auto;
+  width: 90%;
+
+  @include md {
+    flex-direction: column;
+  }
+}
+.ti_flex_col {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding-left: 16px;
+}
+.ti_title {
+  font: 700 48px/1.2 "Urbanist", Helvetica, Arial, serif;
+  color: rgb(255, 255, 255);
+  letter-spacing: -0.1px;
+
+  @include md {
+    font-size: 50px;
+  }
+  @include xxs {
+    font-size: 36px;
+  }
+}
+.ti_subtitle {
+  margin: 0px 36px 0px 0px;
+  font: 700 20px/1.4 "Roboto", Helvetica, Arial, serif;
+  color: rgb(255, 255, 255);
+}
+.ti_highlight {
+  width: 309px;
+  font: 300 16px/1.5 "Roboto", Helvetica, Arial, serif;
+  color: rgb(255, 255, 255);
+}
+.ti_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  padding-right: 16px;
+  max-width: 100%;
+  font: 400 16px/1.5 "Roboto", Helvetica, Arial, serif;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  background-color: rgb(13, 13, 13);
+  border-radius: 32px;
+  outline: 1px solid rgb(255, 255, 255);
+  outline-offset: -1px;
+  cursor: pointer;
+}
+.ti_highlight1 {
+  position: relative;
+  font: 400 16px/1.18 "Roboto", Helvetica, Arial, serif;
+  color: rgb(255, 255, 255);
+}
+.ti_icon {
+  width: 16px;
+  height: 16px;
+  color: white;
+}
+.ti_image {
+  width: 600px;
+  object-fit: none;
+}

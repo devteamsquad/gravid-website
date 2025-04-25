@@ -1,0 +1,110 @@
+:root {
+  --Urbanist: "Urbanist", Helvetica, Arial, serif;
+  --Roboto: "Roboto", Helvetica, Arial, serif;
+}
+.main-user-review-cont p,
+.main-user-review-cont h5 {
+  padding: 0;
+}
+/* .App {
+  background-image: url("../assets/Wave_2.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+} */
+.mainreview-blur {
+  position: absolute;
+  filter: blur(100px);
+  width: 248px;
+  height: 100px;
+}
+.main-blur-1 {
+  top: 16%;
+  right: 8%;
+}
+.main-blur-2 {
+  top: 40%;
+  left: 0%;
+}
+.main-blur-3 {
+  top: 50%;
+  right: 10%;
+}
+
+.main-user-review-cont {
+  position: relative;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  /* text-align: center; */
+  gap: 48px;
+  overflow: clip;
+}
+.review-decor-img-cont {
+  width: 8vw;
+}
+.review-decor-img {
+  position: absolute;
+  width: 100%;
+}
+.test-wave_2 {
+  top: 0;
+  right: 5%;
+}
+.test-wave_3 {
+  top: 20%;
+  left: 0;
+}
+.wave_1 {
+  /* position: absolute; */
+  /* width: 10%; */
+  top: 500vh;
+  right: 0;
+  /* top: 400vh; */
+}
+.main-review-hero-cont {
+  margin-bottom: 70px;
+}
+.hero-star-cont {
+  align-items: baseline;
+  gap: 6;
+}
+.star-head-txt {
+  margin-left: 2px;
+  font: 600 56px/1.2 var(--Urbanist);
+}
+.star-txt {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.hero-star {
+  color: #ead461;
+  font-size: 2rem;
+}
+
+/* .main-review-sect {
+  background-image: url("../assets/Wave_3.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+} */
+@media screen and (max-width: 500px) {
+  .hero-star-cont {
+    margin-top: 12px;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .mainreview-blur {
+    background-color: #7b79decc;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .mainreview-blur {
+    background-color: #ffffffcc;
+  }
+  .review-decor-img {
+    filter: invert(1);
+  }
+}

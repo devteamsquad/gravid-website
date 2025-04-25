@@ -1,0 +1,403 @@
+@use "./utils.scss" as *; // media-query
+
+.newsletterSection {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  border: solid 5px white;
+  border-radius: 70px 70px 0px 0px;
+  //  --border-angle: 0turn; // For animation.
+  //   --main-bg: conic-gradient(
+  //       from var(--border-angle),
+  //       black,
+  //       black 5%,
+  //       black 60%,
+  //       black 95%
+  //     );
+
+  //   border: solid 5px transparent;
+  //   border-radius: 70px 70px 0px 0px;
+  //   --gradient-border: conic-gradient(from var(--border-angle), transparent 25%, #bdbcbc, white 99%, transparent);
+
+  //   background:
+  //     var(--main-bg) padding-box,
+  //     var(--gradient-border) border-box,
+  //     var(--main-bg) border-box;
+
+  //   background-position: center center;
+
+  //   animation: bg-spin 3s linear infinite;
+  //   @keyframes bg-spin {
+  //     to {
+  //       --border-angle: 1turn;
+  //     }
+  //   }
+}
+
+@property --border-angle {
+  syntax: "<angle>";
+  inherits: true;
+  initial-value: 0turn;
+}
+
+.contentBox2 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  max-width: 1430px;
+  background: var(--src) center center / cover no-repeat;
+  border-radius: 70px 70px 0px 0px;
+}
+.flexCol {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 45px 0px;
+  margin: 60px auto 60px;
+  width: 85%;
+  @include xs {
+    margin: 60px auto 80px;
+  }
+  @include tn {
+    margin: 50px auto;
+  }
+}
+.flexRow {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  gap: 0px 10px;
+  width: 100%;
+  @include lg {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px 10px;
+  }
+}
+.flexCol1 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 0px 0px 37px;
+  width: 380px;
+  min-width: 0px;
+  @include lg {
+    margin-top: unset;
+    margin-bottom: unset;
+    width: 100%;
+    min-width: unset;
+  }
+}
+.newsletterImage {
+  position: relative;
+  width: 260px;
+  max-width: 85%;
+  object-fit: cover;
+}
+.newsletterSubtitle {
+  position: relative;
+  margin: 20px 6px 0px;
+  font: 400 20px/1.5 "Roboto", Helvetica, Arial, serif;
+  color: rgb(255, 255, 255);
+  @include md {
+    align-items: flex-start;
+    font-size: 18px;
+  }
+  @include xxs {
+    font-size: 16px;
+  }
+}
+.contentBox1 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 14px 1px 0px 5px;
+  border-radius: 16px 16px 16px 16px;
+  outline: 2px solid rgb(255, 255, 255);
+  outline-offset: -2px;
+}
+.emailInputBox {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: var(--src) center center / cover no-repeat;
+  border-radius: 16px 16px 16px 16px;
+  outline: 2px solid rgb(255, 255, 255);
+  outline-offset: -2px;
+}
+.flexRow1 {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  gap: 0px 10px;
+  margin: 12px 20px;
+  @include xs {
+    margin: 12px 16px;
+  }
+  @include tn {
+    column-gap: 8px;
+    margin: 12px 8px;
+  }
+}
+.emailLabel {
+  position: relative;
+  margin: 2px 0px;
+  font: italic 300 16px/1.5 "Roboto", Helvetica, Arial, serif;
+  color: rgb(255, 255, 255);
+  letter-spacing: -0.1px;
+  width: 100%;
+  background-color: inherit;
+  border: none;
+
+  &::placeholder {
+    color: grey;
+  }
+}
+
+.emailIcon {
+  position: relative;
+  width: 28px;
+  height: auto;
+  object-fit: cover;
+  cursor: pointer;
+}
+.privacyText {
+  position: relative;
+  margin: 12px 0px 0px 6px;
+  font: 400 12px/1.5 "Roboto", Helvetica, Arial, serif;
+  color: rgb(255, 255, 255);
+}
+.flexCol2 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px 0px;
+  margin: 60px 0px 95px;
+  width: 290px;
+  min-width: 0px;
+  @include lg {
+    margin-top: unset;
+    margin-bottom: unset;
+    width: 100%;
+    min-width: unset;
+  }
+}
+.downloadTitle {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  font: 700 32px/1.5 "Roboto", Helvetica, Arial, serif;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  margin: 0px;
+  @include md {
+    align-items: flex-start;
+    font-size: 30px;
+  }
+  @include xxs {
+    font-size: 26px;
+  }
+}
+.flexRow2 {
+  position: relative;
+  display: flex;
+  gap: 0px 21px;
+  width: 100%;
+  @include lg {
+    justify-content: center;
+    column-gap: 20px;
+  }
+  @include xs {
+    column-gap: 16px;
+  }
+  @include tn {
+    column-gap: 8px;
+  }
+}
+.downloadImage {
+  position: relative;
+  width: 135px;
+  min-width: 0px;
+  border-radius: 10px 10px 10px 10px;
+  outline: 1px solid rgb(249, 249, 249);
+  outline-offset: -1px;
+  object-fit: cover;
+  cursor: pointer;
+}
+.infoColumn {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  min-width: 0px;
+  @include lg {
+    flex-wrap: wrap;
+    column-gap: 0px;
+    margin-top: unset;
+    margin-bottom: unset;
+    width: 100%;
+    min-width: unset;
+  }
+}
+.aboutUs {
+  position: relative;
+  padding: 16px;
+  font: 400 16px/1.5 "Roboto", Helvetica, Arial, serif;
+  color: rgb(255, 255, 255);
+  @include tn {
+    margin: 0px 8px 0px 0px;
+  }
+
+  &:hover {
+    border-bottom: 1px solid white;
+    cursor: pointer;
+  }
+}
+.socialMediaColumn {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 110px;
+  min-width: 0px;
+  @include lg {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 24px;
+    margin-top: unset;
+    margin-bottom: unset;
+    width: 100%;
+    min-width: unset;
+  }
+}
+
+.socialMediaContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 110px;
+  min-width: 0px;
+  @include lg {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 24px;
+    margin-top: unset;
+    margin-bottom: unset;
+    width: 100%;
+    min-width: unset;
+  }
+
+  @include sm {
+    flex-direction: column;
+  }
+}
+.followUs {
+  position: relative;
+  font: 600 16px/1.5 "Roboto", Helvetica, Arial, serif;
+  color: rgb(255, 255, 255);
+  margin: 0px;
+
+  @include lg {
+    margin-top: unset;
+    margin-right: unset;
+    margin-bottom: unset;
+    margin-left: unset;
+  }
+  @include sm {
+    margin-bottom: 16px;
+  }
+}
+.socialMediaRow {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include lg {
+    margin-top: unset;
+    margin-right: unset;
+    margin-bottom: unset;
+    margin-left: unset;
+  }
+  @include tn {
+    column-gap: 8px;
+  }
+}
+.socialMediaIcon {
+  // position: relative;
+  width: 24px;
+  height: 24px;
+  object-fit: cover;
+  cursor: pointer;
+}
+.socialMediaLabel {
+  // position: relative;
+  font: 400 16px/1.5 "Roboto", Helvetica, Arial, serif;
+  color: rgb(255, 255, 255);
+  margin: 0px;
+  @include lg {
+    display: none;
+  }
+  &:hover {
+    border-bottom: 1px solid white;
+    cursor: pointer;
+  }
+}
+
+.footerColumn {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 22px 0px;
+  width: 720px;
+  max-width: 85%;
+}
+.copyright {
+  position: relative;
+  font: 400 16px/1.5 "Roboto", Helvetica, Arial, serif;
+  color: rgb(255, 255, 255);
+  margin: 0px;
+  @include sm {
+    font-size: 14px;
+  }
+}
+.linkRow {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  gap: 0px 10px;
+  width: 100%;
+  @include lg {
+    display: none;
+  }
+  @include sm {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px 10px;
+  }
+}
+.privacyPolicy {
+  position: relative;
+  font: 400 16px/1.5 "Roboto", Helvetica, Arial, serif;
+  color: rgb(255, 255, 255);
+  text-decoration: underline;
+  margin: 0px;
+  @include sm {
+    margin-top: unset;
+    margin-bottom: unset;
+    width: 100%;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+a {
+  text-decoration: inherit;
+  color: inherit;
+  cursor: auto;
+}

@@ -1,0 +1,102 @@
+@use "../../shared/css/utils.scss" as *; // media-query
+
+.dap_dap_section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.dap_communicationSection {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.dap_flexRow {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0px 10px;
+  margin: 80px auto 80px;
+  width: 85%;
+  max-width: 1230px;
+
+  @include md {
+    flex-direction: column;
+    gap: 30px 10px;
+    margin: 150px auto 144px;
+  }
+  @include xs {
+    margin: 80px auto;
+  }
+  @include tn {
+    margin: 50px auto;
+  }
+}
+.dap_image {
+  position: relative;
+  // width: 713px;
+  width: 45%;
+  min-width: 0px;
+  object-fit: cover;
+  @include md {
+    margin-top: unset;
+    margin-bottom: unset;
+    width: 100%;
+    min-width: unset;
+    max-width: 713px;
+  }
+}
+.dap_flexCol {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  // width: 433px;
+  width: 45%;
+  min-width: 0px;
+  @include md {
+    margin-top: unset;
+    margin-bottom: unset;
+    width: 100%;
+    min-width: unset;
+  }
+}
+.dap_title {
+  position: relative;
+  font: 600 48px "Urbanist", Helvetica, Arial, serif;
+  // color: rgb(255, 255, 255);
+  padding: 0;
+  @include md {
+    align-items: flex-start;
+    font-size: 44px;
+  }
+  @include xxs {
+    font-size: 36px;
+  }
+}
+.dap_highlight {
+  position: relative;
+  margin: 20px 0px 0px;
+  font: 300 16px/1.6 "Roboto", Helvetica, Arial, serif;
+  // color: rgb(255, 255, 255);
+  padding: 0%;
+  @include tn {
+    margin: 50px 0px 0px;
+  }
+}
+.dap_btn {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0px 0px;
+  width: 142px;
+  max-width: 100%;
+  font: 400 16px "Roboto", Helvetica, Arial, serif;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  background-color: rgb(13, 13, 13);
+  border-radius: 4px 4px 4px 4px;
+  padding: 8px 8px 8px 8px;
+  outline: 1px solid rgb(255, 255, 255);
+  outline-offset: -1px;
+  cursor: pointer;
+}

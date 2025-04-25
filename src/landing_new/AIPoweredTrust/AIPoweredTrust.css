@@ -1,0 +1,28 @@
+.aipowered-cont h2,
+.aipowered-cont h3,
+.aipowered-cont p {
+  padding: 0;
+}
+
+.aipowered-cont {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.ai-subhead {
+  font: 500 36px/1.5 var(--Roboto);
+  margin: 20px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .ai-subhead {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .ai-subhead {
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,88 @@
+.busi-video-cont {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.videos-cont {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.business-video-player {
+  position: relative;
+}
+.video-player-header {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
+.player-company-detail,
+.brand-details-cont {
+  gap: 20px;
+  width: 100%;
+  align-items: center;
+}
+.video-player-header,
+.video-player-cont {
+  padding: 10px 30px;
+}
+.video-player-header {
+  background-color: #1b1b1be5;
+}
+.company-txt-h3 {
+  font: 700 16px/1.5 var(--Urbanist);
+  padding: 0;
+}
+.company-txt-p {
+  font: 400 14px/1.5 var(--Roboto);
+  padding: 0;
+}
+.cancel-icon {
+  cursor: pointer;
+  font-size: 2rem;
+}
+.video-player-cont {
+  max-width: 90vw;
+  max-height: 670px;
+  height: 600px;
+}
+.video-companyLogo {
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+
+@media screen and (max-width: 500px) {
+  .player-company-detail {
+    gap: initial;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .brand-details-cont {
+    align-items: center;
+  }
+  .company-txt-h3 {
+    font: 700 14px/1.5 var(--Urbanist);
+    padding: 0;
+  }
+  .company-txt-p {
+    font: 400 12px/1.5 var(--Roboto);
+    padding: 0;
+  }
+  .cancel-icon {
+    font-size: 1.5rem;
+  }
+  .video-player-cont {
+    height: 80vh;
+  }
+}
+@media screen and (max-width: 400px) {
+  .video-player-cont {
+    height: 300px;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .video-player-header {
+    background-color: #ffffffdf;
+  }
+}

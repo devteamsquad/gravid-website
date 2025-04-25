@@ -1,0 +1,23 @@
+@use "../../shared/css/utils.scss" as *; // media-query
+
+.comun-ti_container {
+  border: 0;
+}
+
+.comun-ti_flex_col {
+  gap: 30px;
+}
+
+.comun-extra-txt {
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+@media screen and (max-width: 900px) {
+  .comun-ti_highlight {
+    width: 100%;
+  }
+}

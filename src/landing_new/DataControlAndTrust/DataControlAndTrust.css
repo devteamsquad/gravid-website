@@ -1,0 +1,104 @@
+.trust-cont p,
+.trust-cont h2 {
+  padding: 0;
+}
+.trust-blur {
+  position: absolute;
+  filter: blur(150px);
+  width: 248px;
+  height: 100px;
+}
+.trust-blur-1 {
+  top: 0;
+  left: 0;
+}
+.trust-blur-2 {
+  bottom: 0px;
+  right: 0;
+}
+.trust-cont {
+  position: relative;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  justify-content: space-between;
+  gap: 60px;
+  background-image: url("../../assets/homewave_2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: clip;
+}
+.section-heading-txt {
+  font: 700 64px/1.5 var(--Urbanist);
+}
+
+.section-body {
+  font: 400 24px/1.5 var(--Roboto);
+}
+.trust-list-cont {
+  /* justify-content: space-between; */
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 48px;
+}
+.list-icon-cont {
+  width: 36px;
+  height: 36px;
+}
+.list-icon-cont img {
+  width: 100%;
+}
+
+.list-text {
+  width: 416px;
+  font: 400 24px/1.5 var(--Roboto);
+}
+@media screen and (max-width: 768px) {
+  .section-heading-txt {
+    font-size: 48px;
+  }
+  .section-body,
+  .list-text {
+    font-size: 18px;
+  }
+  .trust-cont {
+    flex-direction: column;
+    align-items: start;
+    gap: 30px;
+  }
+  .list-icon-cont {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .section-heading-txt {
+    font-size: 36px;
+    line-height: 3rem;
+  }
+  .section-body,
+  .list-text {
+    font-size: 15px;
+  }
+  .list-text {
+    width: 250px;
+  }
+}
+@media screen and (max-width: 340px) {
+  .list-text {
+    width: 200px;
+  }
+}
+@media (prefers-color-scheme: light) {
+  .trust-blur {
+    background-color: #7b79decc;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  .trust-blur {
+    background-color: #ffffffcc;
+  }
+  .list-icon-cont img {
+    filter: invert(1);
+  }
+}

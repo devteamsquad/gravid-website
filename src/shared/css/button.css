@@ -1,0 +1,42 @@
+:root {
+  --Roboto: "Roboto", Helvetica, Arial, serif;
+}
+
+.nav-cta-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font: 400 16px/1 var(--Roboto);
+  padding: 10px 20px;
+  border-radius: 8px;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+@media (prefers-color-scheme: light) {
+  .outline-btn {
+    background-color: #f9f9f9;
+    border: 1px solid black;
+  }
+  .solid-btn {
+    background-color: black;
+    border: 1px solid #f9f9f9f9;
+    color: #f9f9f9f9;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  .solid-btn {
+    background-color: #f9f9f9;
+    border: 1px solid black;
+  }
+  .outline-btn {
+    background-color: black;
+    border: 1px solid #f9f9f9f9;
+    color: #f9f9f9f9;
+  }
+}
+
+/* .btn-icon {
+  font-size: rem;
+} */

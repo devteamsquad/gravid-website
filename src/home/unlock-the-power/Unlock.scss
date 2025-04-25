@@ -1,0 +1,85 @@
+@use "../../shared/css/utils.scss" as *; // media-query
+
+.unlock_section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.unlock_flexCol {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 900px;
+  max-width: 85%;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  justify-content: center;
+  transform: translate(-50%, -50%);
+}
+.unlock_title {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  font: 600 56px/1.2 "Urbanist", Helvetica, Arial, serif;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  letter-spacing: -0.1px;
+  @include md {
+    align-items: flex-start;
+    font-size: 50px;
+  }
+  @include xxs {
+    font-size: 36px;
+  }
+}
+.unlock_subtitle {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: 24px 0px 0px;
+  font: 300 16px/1.5 "Roboto", Helvetica, Arial, serif;
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+.unlock_button {
+  display: flex;
+  justify-content: center;
+  margin: 24px 0px 0px;
+  width: 142px;
+  max-width: 100%;
+  font: 400 16px/1.5 "Roboto", Helvetica, Arial, serif;
+  color: rgb(255, 255, 255);
+  background-color: black;
+  text-align: center;
+  border-radius: 24px;
+  padding: 8px;
+  outline: 1px solid rgb(255, 255, 255);
+  outline-offset: -1px;
+  cursor: pointer;
+}
+
+.unlock_image {
+  width: auto;
+  @include lg {
+    display: none;
+  }
+
+  @include md {
+    display: none;
+  }
+
+}
+
+.mobile_unlock_image {
+  width: auto;
+  display: none;
+  @include lg {
+    display: none;
+  }
+
+  @include md {
+    display: flex;
+  }
+}

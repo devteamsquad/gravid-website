@@ -1,0 +1,66 @@
+@use "../../shared/css/utils.scss" as *; // media-query
+
+.top_section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.top_flexCol {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 90px auto 60px;
+  width: 900px;
+  max-width: 85%;
+  @include md {
+    margin: 100px auto;
+  }
+  @include xs {
+    margin: 80px auto;
+  }
+  @include tn {
+    margin: 70px auto;
+  }
+}
+.top_title {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  font: 600 56px/1.2 "Urbanist", Helvetica, Arial, serif;
+  // color: rgb(255, 255, 255);
+  text-align: center;
+  padding-bottom: 0%;
+  @include md {
+    font-size: 50px;
+  }
+  @include xxs {
+    font-size: 36px;
+  }
+}
+.top_subtitle {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: 16px 0px 0px;
+  font: 300 16px/1.5 "Roboto", Helvetica, Arial, serif;
+  // color: rgb(255, 255, 255);
+  text-align: center;
+  padding-top: 0;
+}
+.top_button {
+  display: flex;
+  justify-content: center;
+  margin: 16px 0px 0px;
+  width: 142px;
+  max-width: 100%;
+  font: 400 16px/1.5 "Roboto", Helvetica, Arial, serif;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  background-color: rgb(13, 13, 13);
+  border-radius: 4px 4px 4px 4px;
+  padding: 8px 8px 8px 8px;
+  outline: 1px solid rgb(255, 255, 255);
+  outline-offset: -1px;
+  cursor: pointer;
+}

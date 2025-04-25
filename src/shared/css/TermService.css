@@ -1,0 +1,29 @@
+.text_container{
+    
+    position: relative; 
+    padding-bottom: 60%; 
+    overflow:hidden;
+    /* width:100%;
+    height: 100%; */
+    
+}
+.text_container iframe,
+.text_container object,
+.text_container embed{ 
+    position: absolute;
+    top: 0;
+    left:0;
+    width:100%;
+    height: 100%;
+    background: transparent;
+}
+.saas-cont iframe {
+    left: calc(((100vw - 800px) * 0.5));
+    border: 0;
+  }
+  
+  @media screen and (max-width: 900px) {
+    .saas-cont iframe {
+      left: 0;
+    }
+  }

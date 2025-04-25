@@ -1,0 +1,53 @@
+.fund-cont p,
+.fund-cont h2 {
+  padding: 0;
+}
+.fund-section {
+  padding-left: 10%;
+  padding-right: 0%;
+}
+.fund-cont {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 20px;
+  background-image: url("../../assets/lg_home_phone_bg.png");
+  background-size: cover;
+  background-position: -100px 0;
+  background-repeat: no-repeat;
+}
+.fund-left-cont {
+  gap: 40px;
+  align-items: start;
+  width: 44%;
+  padding: 60px 0;
+}
+.fund-img-cont {
+  width: 50%;
+  height: 100%;
+}
+.fund-img-cont img {
+  display: none;
+  width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .fund-section {
+    padding-left: 6%;
+    padding-right: 6%;
+  }
+  .fund-cont {
+    flex-direction: column;
+    gap: 40px;
+    background-image: none;
+  }
+  .fund-left-cont,
+  .fund-img-cont {
+    width: 100%;
+    padding: 0;
+    gap: 20px;
+  }
+  .fund-img-cont img {
+    display: block;
+  }
+}

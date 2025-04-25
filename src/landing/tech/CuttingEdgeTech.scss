@@ -1,0 +1,111 @@
+@use "../../shared/css/utils.scss" as *; // media-query
+
+.cet-section {
+  color: white;
+  padding: 2rem 5rem;
+  margin-top: 60px;
+}
+.cet-heading {
+  font: 600 47px/1.2 var(--Urbanist);
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.slider-parent {
+  background-color: #4343436c;
+  backdrop-filter: blur(12px);
+  border-radius: 40px;
+  padding: 60px 40px;
+}
+.cont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.caret {
+  font-size: 3rem;
+  cursor: pointer;
+  transition: all ease-in-out 1000ms;
+}
+.slider-holder {
+  overflow-x: clip;
+  width: 100%;
+}
+
+.slider-cont {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all ease-in-out 1000ms;
+}
+.slider {
+  width: 80%;
+}
+
+.slider h4 {
+  font-size: 1.2rem;
+}
+.slider p {
+  font-size: 1rem;
+}
+.indicator-wrap {
+  position: relative;
+  height: 10px;
+}
+.scroll-indicator {
+  position: relative;
+  width: 100%;
+  background-color: #434343;
+  height: 5px;
+  margin-top: 10%;
+  border-radius: 40px;
+  transition: background ease-in-out 1000ms;
+}
+.scroll {
+  background-color: #fdaefc;
+  height: 5px;
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+}
+.circle {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  position: absolute;
+  top: -25%;
+
+  background-color: #fdaefc;
+  transition: all ease-in-out 1000ms;
+}
+.rocket {
+  position: absolute;
+  color: #fdaefc;
+  top: -240%;
+  font-size: 2rem;
+  left: calc(40% - 2px);
+
+  transform: rotate(90deg);
+  transition: all ease-in-out 1000ms;
+}
+.width-zero {
+  width: 0;
+}
+
+@media screen and (max-width: 450px) {
+  .cet-section {
+    padding: 1rem 1.4rem;
+  }
+  .cet-heading {
+    font: 600 30px/1.2 var(--Urbanist);
+  }
+  .slider-parent {
+    padding: 20px;
+  }
+  .caret {
+    font-size: 2rem;
+  }
+  .rocket {
+    font-size: 1.3rem;
+    top: -130%;
+  }
+}

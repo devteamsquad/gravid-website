@@ -1,0 +1,38 @@
+.help-center-container {
+  padding: 50px;
+  /* background-color: #000; */
+  /* color: #fff; */
+}
+
+.help-center-header {
+  margin-bottom: 20px;
+}
+
+.help-center-header h1 {
+  font-size: 32px;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+
+.help-center-header p {
+  font-size: 1rem;
+  color: #ccc;
+}
+
+.help-center-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .help-center-container {
+    padding: 15px;
+  }
+  .help-center-grid {
+    grid-template-columns: 1fr;
+  }
+  .help-center-header h1 {
+    font-size: 24px;
+  }
+}

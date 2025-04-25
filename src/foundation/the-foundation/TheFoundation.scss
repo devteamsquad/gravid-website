@@ -1,0 +1,109 @@
+@use "../../shared/css/utils.scss" as *; // media-query
+
+.foundation_section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px 0px;
+  margin: 120px auto 120px;
+  width: 85%;
+  max-width: 1224px;
+  @include md {
+    margin: 150px auto;
+  }
+  @include xs {
+    gap: 80px 0px;
+    margin: 80px auto;
+  }
+  @include tn {
+    gap: 30px 0px;
+    margin: 50px auto;
+  }
+}
+.foundation_title {
+  display: flex;
+  justify-content: center;
+  font: 600 56px/1.2 "Urbanist", Helvetica, Arial, serif;
+  // color: rgb(255, 255, 255);
+  text-align: center;
+  @include md {
+    align-items: flex-start;
+    font-size: 50px;
+  }
+  @include xxs {
+    font-size: 36px;
+  }
+}
+.foundation_contentRows {
+  display: flex;
+  justify-content: space-between;
+  gap: 0px 10px;
+  width: 100%;
+  @include lg {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px 10px;
+  }
+}
+.foundation_box {
+  position: relative;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  width: 380px;
+  min-width: 0px;
+  border-radius: 16px 16px 16px 16px;
+  outline: 3px solid rgb(255, 255, 255);
+  outline-offset: -3px;
+  @include lg {
+    margin-top: unset;
+    margin-bottom: unset;
+    width: 100%;
+    min-width: unset;
+  }
+}
+.foundation_flexCol {
+  display: flex;
+  flex-direction: column;
+  margin: 24px;
+}
+.foundation_sectionTitle {
+  font: 600 36px/1.2 "Urbanist", Helvetica, Arial, serif;
+  // color: rgb(255, 255, 255);
+  @include md {
+    align-items: flex-start;
+    font-size: 32px;
+  }
+  @include xxs {
+    font-size: 30px;
+  }
+}
+.foundation_sectionContent {
+  margin: 0px 0px 55px 0px;
+  font: 300 16px/1.5 "Roboto", Helvetica, Arial, serif;
+  // color: rgb(255, 255, 255);
+}
+.foundation_learnMore {
+  display: flex;
+  justify-content: flex-end;
+  margin: 48px 0px 0px;
+  font: 500 16px/1.5 "Roboto", Helvetica, Arial, serif;
+  color: rgb(255, 255, 255);
+  text-align: right;
+  text-decoration: underline;
+
+  position: absolute;
+  bottom: 48px;
+  right: 24px;
+  cursor: pointer;
+
+  @include tn {
+    margin: 50px 0px 0px;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .foundation_box {
+    outline: 3px solid #060708;
+  }
+}

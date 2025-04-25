@@ -1,0 +1,12 @@
+.partner-bottom-cont {
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.vid-img-cont {
+  width: 300px;
+}
+.vid-img-cont img {
+  width: 100%;
+}

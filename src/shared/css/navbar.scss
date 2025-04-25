@@ -1,0 +1,146 @@
+@use "./utils.scss" as *; // media-query
+
+.navbar_section {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px;
+}
+.logo {
+  width: 132px;
+}
+
+.menu-items {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 0px 20px;
+
+  @include max {
+    display: flex;
+  }
+
+  @include md {
+    display: none;
+  }
+}
+
+.menu-item {
+  font: 400 16px/1.5 "Roboto", Helvetica, Arial, serif;
+  // color: rgb(255, 255, 255);
+}
+
+.menu-item .highlight {
+  text-decoration: underline;
+}
+
+.menu-item:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.blue-btn a {
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  display: block; /* important */
+}
+
+.blue-btn,
+.first-link {
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.blue-btn {
+  height: 64px;
+  font: normal normal 400 1em/4em "Roboto", Helvetica, Arial, serif;
+  overflow: hidden;
+  width: 80px;
+  background-color: none;
+  border-radius: 20px;
+}
+
+.blue-btn:hover {
+  background-color: none;
+}
+
+.blue-btn a:hover {
+  text-decoration: none;
+}
+
+.first-link {
+  margin-top: 0em;
+}
+
+.blue-btn:hover .first-link {
+  margin-top: -4.4em;
+}
+.space {
+  width: 60px;
+}
+
+// mobile
+
+.mobile {
+  &_menu-items {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    z-index: 100;
+
+    &_dropdown {
+      position: absolute;
+      top: 18px;
+      right: 18px;
+      z-index: 100;
+      display: flex;
+      flex-direction: column;
+      width: 120px;
+      border: 1px solid white;
+      border-radius: 10px;
+      padding: 10px;
+      background-color: grey;
+    }
+
+    @include max {
+      display: none;
+    }
+
+    @include md {
+      display: flex;
+    }
+  }
+
+  &_menu-item {
+    font: 400 16px/1.5 "Roboto", Helvetica, Arial, serif;
+    color: rgb(255, 255, 255);
+  }
+
+  &_menu-item .highlight {
+    text-decoration: underline;
+  }
+
+  &_menu-item:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  &_navbar-icon {
+    color: white;
+    cursor: pointer;
+  }
+}
+.explorer {
+  font: 400 16px/1.5 "Roboto", Helvetica, Arial, serif;
+  color: rgb(255, 255, 255);
+
+  cursor: pointer;
+}
+.explorer:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}

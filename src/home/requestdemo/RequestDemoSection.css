@@ -1,0 +1,77 @@
+:root {
+  --Urbanist: "Urbanist", Helvetica, Arial, serif;
+  --Roboto: "Roboto", Helvetica, Arial, serif;
+}
+.request-form-cont {
+  background-color: #4a4a4a1c;
+  border-radius: 40px;
+  backdrop-filter: blur(12px);
+  padding: 5% 8%;
+}
+.form-head-home {
+  padding: 0 7%;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.home-form-head {
+  font: 600 48px/1.2 var(--Urbanist) !important;
+}
+
+.form-group-home {
+  margin-bottom: 30px;
+  width: 100%;
+}
+.form-input-home,
+.form-select-home,
+.phone-input-home {
+  width: 100%;
+  padding: 0.5rem;
+  background-color: transparent;
+  outline: 0;
+  color: #ffffff;
+  border: 0;
+  border-bottom: 1px solid #ffffff;
+  border-radius: 0;
+  font-size: 1rem;
+}
+
+.form-input-home:focus,
+.form-select-home:focus,
+.phone-input-home:focus {
+  outline: 0;
+  border-color: #4a5568;
+  box-shadow: 0 3px 3px -3px rgba(66, 83, 96, 0.5);
+}
+.form-select-home option,
+.country-select option {
+  background-color: #1a202c;
+}
+
+.form-input-home.error,
+.form-select-home.error,
+.phone-input-home.error {
+  border-color: #f56565;
+}
+
+.group-input-home {
+  display: flex;
+  width: 100%;
+  gap: 9%;
+  justify-content: space-between;
+}
+.employee-home {
+  color: white;
+}
+
+.request-btn-home {
+  display: flex;
+  align-items: center;
+  width: fit-content !important;
+}
+
+@media (max-width: 480px) {
+  .group-input-home {
+    flex-direction: column;
+    gap: 0;
+  }
+}

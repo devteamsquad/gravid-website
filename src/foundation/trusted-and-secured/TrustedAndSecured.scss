@@ -1,0 +1,114 @@
+@use "../../shared/css/utils.scss" as *; // media-query
+
+.ts_main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.ts_section {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0px 1px;
+
+  @include lg {
+    flex-direction: column;
+    gap: 30px 1px;
+  }
+  @include md {
+    margin-top: 50px;
+    gap: 30px 1px;
+  }
+}
+.ts_image {
+  position: relative;
+  margin: 0px 0px 0px 60px;
+  width: 45%;
+  min-width: 0px;
+  max-width: 886px;
+  object-fit: cover;
+  @include lg {
+    width: 100%;
+    min-width: unset;
+  }
+  @include md {
+    margin: 0px auto;
+  }
+}
+.ts_flexCol {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+
+  margin: 60px 50px;
+  width: 55%;
+  min-width: 0px;
+  max-width: 433px;
+  @include lg {
+    width: 100%;
+    min-width: unset;
+  }
+  @include md {
+    margin: 0px auto;
+    padding: 16px;
+  }
+}
+.ts_title {
+  position: relative;
+  font: 600 48px "Urbanist", Helvetica, Arial, serif;
+  // color: rgb(255, 255, 255);
+  padding: 0;
+  @include md {
+    align-items: flex-start;
+    font-size: 44px;
+  }
+  @include xxs {
+    font-size: 36px;
+  }
+}
+.ts_subtitle {
+  position: relative;
+  margin-top: 20px;
+  font: 300 16px/1.6 "Roboto", Helvetica, Arial, serif;
+  // color: rgb(255, 255, 255);
+  padding: 0;
+  @include tn {
+    margin: 20px 0px 0px;
+  }
+}
+.ts_contentBox {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 90px 0px 0px;
+  width: 142px;
+  max-width: 85%;
+  background-color: rgb(13, 13, 13);
+  border-radius: 4px 4px 4px 4px;
+  outline: 1px solid rgb(255, 255, 255);
+  outline-offset: -1px;
+  @include xs {
+    margin: 80px 0px 0px;
+  }
+  @include tn {
+    margin: 50px 0px 0px;
+  }
+}
+
+.ts_button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin: 20px 0px 0px;
+  width: 142px;
+  max-width: 100%;
+  font: 400 16px "Roboto", Helvetica, Arial, serif;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  background-color: rgb(13, 13, 13);
+  border-radius: 4px 4px 4px 4px;
+  padding: 8px 8px 8px 8px;
+  outline: 1px solid rgb(255, 255, 255);
+  outline-offset: -1px;
+  cursor: pointer;
+}

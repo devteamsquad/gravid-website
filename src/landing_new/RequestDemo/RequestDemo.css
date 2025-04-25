@@ -1,0 +1,160 @@
+/* GetInTouch.css */
+.request-container {
+  /* color: white; */
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  margin: 70px auto 200px;
+
+  /* overflow: hidden; */
+}
+
+.req-touch_content {
+  width: 90%;
+}
+
+.req-touch_content h1 {
+  font: 600 56px/1.2 var(--Urbanist);
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.req-subtext {
+  margin-bottom: 2rem;
+  text-align: center;
+  opacity: 0.8;
+}
+.loader {
+  opacity: 0.5;
+}
+.req-touch_form {
+  border-radius: 25px;
+  border: 1px solid;
+  /* color: white; */
+  /* background-color: #1a1a1a74; */
+  backdrop-filter: blur(3px);
+}
+.req-form-row {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  gap: 12%;
+}
+
+.req-form-group {
+  flex: 1;
+  margin-bottom: 1rem;
+}
+
+.req-touch_label {
+  display: block;
+  /* color: white; */
+  margin-bottom: 0.5rem;
+}
+
+.req-touch_input,
+.req-touch_textarea {
+  width: 100%;
+  padding: 0.5rem;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid;
+  /* color: white; */
+  font-size: 1rem;
+}
+
+.req-touch_textarea {
+  /* min-height: 100px; */
+  height: initial;
+  resize: vertical;
+}
+
+.req-button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; /* Optional: adds some space above the button */
+}
+
+.req-submit-btn {
+  /* background-color: transparent; */
+  /* color: white; */
+  border: 1px solid;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  width: auto;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.req-submit-btn:hover {
+  /* background-color: white; */
+  /* color: black; */
+}
+
+@media (max-width: 600px) {
+  .req-form-row {
+    flex-direction: column;
+  }
+
+  .req-touch_content h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .req-touch_content {
+    width: 100%;
+  }
+  .req-touch_content h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .req-touch_form {
+    background-color: transparent;
+    border-color: #7b79decc;
+  }
+  .req-touch_input,
+  .req-touch_textarea,
+  .submit-btn {
+    border-color: #8d8d8d;
+  }
+  .req-touch_input,
+  .req-touch_textarea::placeholder,
+  .req-touch_textarea {
+    color: black;
+  }
+  .req-touch_input:focus,
+  .req-touch_textarea:focus {
+    outline: none;
+    border-bottom-color: black;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  .req-touch_form {
+    background-color: #1a1a1a74;
+    border-color: white;
+  }
+  .req-touch_input,
+  .req-touch_textarea,
+  .submit-btn {
+    border-color: white;
+  }
+  .req-touch_input,
+  .req-touch_textarea::placeholder,
+  .req-touch_textarea {
+    color: white;
+  }
+  .req-touch_input:focus,
+  .req-touch_textarea:focus {
+    outline: none;
+    border-bottom-color: white;
+  }
+  .req-submit-btn {
+    color: black;
+  }
+}

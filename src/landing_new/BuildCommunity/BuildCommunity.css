@@ -1,0 +1,137 @@
+:root {
+  --Urbanist: "Urbanist", Helvetica, Arial, serif;
+  --Roboto: "Roboto", Helvetica, Arial, serif;
+}
+
+.build-community-cont h4,
+.build-community-cont h3,
+.build-community-cont h2,
+.build-community-cont p {
+  padding: 0;
+}
+
+.build-community-cont {
+  position: relative;
+  padding-top: 92px;
+  padding-bottom: 92px;
+  background-image: url("../../assets/homewave_1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.community-blur {
+  position: absolute;
+  filter: blur(150px);
+  width: 248px;
+  height: 100px;
+}
+.com-blur-1 {
+  top: 220px;
+  left: 295px;
+}
+.com-blur-2 {
+  top: 400px;
+  right: 125px;
+}
+.community-h4 {
+  font: 400 24px/1.5 var(--Roboto);
+}
+
+.community-h2 {
+  font: 700 64px/1.5 var(--Urbanist);
+}
+.stat-img-cont {
+  width: 100%;
+  margin: 70px 0;
+}
+.stat-img-cont img {
+  width: 100%;
+}
+.community-p {
+  margin-top: 60px;
+  font: 400 24px/1.5 var(--Roboto);
+  margin-bottom: 70px;
+}
+.community-cta-cont {
+  gap: 32px;
+}
+.community-h3 {
+  font: 600 48px/1.5 var(--Urbanist);
+}
+
+.cta-btn {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .com-blur-1 {
+    top: 50px;
+    left: 20px;
+  }
+  .com-blur-2 {
+    bottom: 20px;
+    right: 50px;
+  }
+  .community-h4 {
+    font-size: 18px;
+  }
+  .community-h2 {
+    font-size: 48px;
+  }
+  .stat-img-cont {
+    margin: 40px 0;
+  }
+  .community-p {
+    font-size: 18px;
+    margin: 40px 0;
+  }
+  .community-cta-cont {
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+  }
+  .community-h3 {
+    font-size: 36px;
+  }
+  .cta-btn {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .community-h4 {
+    font-size: 16px;
+  }
+  .community-h2 {
+    font-size: 36px;
+    line-height: 3rem;
+  }
+  .stat-img-cont {
+    margin: 30px 0;
+  }
+  .community-p {
+    font-size: 15px;
+  }
+  .community-h3 {
+    font-size: 24px;
+  }
+
+  .com-blur-1 {
+    top: 100px;
+    left: 0px;
+  }
+  .com-blur-2 {
+    bottom: 0px;
+    right: 0px;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  .community-blur {
+    background-color: #7b79decc;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  .community-blur {
+    background-color: #ffffffcc;
+  }
+}

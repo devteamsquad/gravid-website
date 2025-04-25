@@ -1,0 +1,121 @@
+@use "../../shared/css/utils.scss" as *; // media-query
+
+/* GetInTouch.css */
+.get-in-touch-container {
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  margin: 70px auto 200px;
+
+  /* overflow: hidden; */
+}
+
+.touch_content {
+  width: 90%;
+}
+
+.touch_content h1 {
+  font: 600 56px/1.2 var(--Urbanist);
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.touch_content p {
+  margin-bottom: 2rem;
+  text-align: center;
+  opacity: 0.8;
+}
+.touch_form {
+  border-radius: 25px;
+  color: white;
+  background-color: #1a1a1a74;
+  backdrop-filter: blur(3px);
+}
+.form-row {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  gap: 12%;
+}
+
+.form-group {
+  flex: 1;
+  margin-bottom: 1rem;
+}
+
+.touch_label {
+  display: block;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.touch_input,
+.touch_textarea {
+  width: 100%;
+  padding: 0.5rem;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+  color: white;
+  font-size: 1rem;
+}
+.touch_input,
+.touch_textarea::placeholder {
+  color: white;
+}
+
+.touch_textarea {
+  /* min-height: 100px; */
+  height: initial;
+  resize: vertical;
+}
+
+.touch_input:focus,
+.touch_textarea:focus {
+  outline: none;
+  border-bottom-color: white;
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px; /* Optional: adds some space above the button */
+}
+
+.submit-btn {
+  background-color: transparent;
+  color: white;
+  border: 1px solid white;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 2rem;
+  cursor: pointer;
+  width: initial;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: white;
+  color: black;
+}
+
+@media (max-width: 600px) {
+  .form-row {
+    flex-direction: column;
+  }
+
+  .touch_content h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .touch_content {
+    width: 100%;
+  }
+  .touch_content h1 {
+    font-size: 2rem;
+  }
+}
